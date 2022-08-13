@@ -1,0 +1,19 @@
+{
+  "name": "test-docx",
+  "version": "1.0.0",
+  "description": "for generation docx ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "author": "Sparlex",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/swagger": "^7.4.1",
+    "fastify": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
