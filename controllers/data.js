@@ -3,22 +3,21 @@ const postData = (req, reply) => {
     
     let counter = 0
 
-    function getFiniteValue(obj) {
+    function getQuantityParis(obj) {
         getProp(obj);
     
         function getProp(o) {
             for(var prop in o) {
-                if(typeof(o[prop]) === 'object') {
+                if((o[prop]) === 'value') {
                     getProp(o[prop]);
                 } else {
-                    console.log('Finite value: ',o[prop])
-                    counter++
+                    counter++;
                 }
             }
         }
     }
 
-    getFiniteValue(req.body)
+    getQuantityParis(req.body)
     reply.send({message: `number of pairs ${counter}`})
 }
 

@@ -3,8 +3,18 @@ const {postData} = require('../controllers/data')
 // Options for add data
 const postDataOpts = {
     schema: {
+        description: 'post some paris key and value',
+        tags: ['data for docx'],
         body: {
-            type: 'object'
+            type: 'array',
+            items: {
+                type: 'object',
+                required:  ["key", "value"],
+                properties : {
+                    key: { type: 'string' },
+                    value: { type: 'string' },
+                }
+            }
         },
         response: {
             200: {
