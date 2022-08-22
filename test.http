@@ -2,11 +2,9 @@
 POST http://localhost:5000/data_for_docx HTTP/1.1
 Content-Type: application/json
 
-{
-    "key1": "1",
-    "key2": "1",
-    "key3": "5",
-    "key4":" 6",
-    "key5": "5",
-    "key6": "2"
-}
+[
+  {
+    "key": "string",
+    "value": "string"
+  }
+]

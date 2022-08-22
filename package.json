@@ -10,12 +10,13 @@
   "author": "Sparlex",
   "license": "ISC",
   "dependencies": {
+    "@fastify/static": "^6.5.0",
     "@fastify/swagger": "^7.4.1",
-    "docx": "^7.4.1",
-    "fastify": "^4.4.0"
+    "docxtemplater": "^3.31.2",
+    "fastify": "^4.4.0",
+    "pizzip": "^3.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
   }
-  
 }
