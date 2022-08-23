@@ -10,10 +10,6 @@ const postDataOpts = {
             items: {
                 type: 'object',
                 required:  ["key", "value"],
-                properties : {
-                    key: { type: 'string' },
-                    value: { type: 'string' },
-                }
             }
         },
         response: {
